@@ -1,0 +1,4 @@
+repository "FarmGame@tj_st_sad@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
