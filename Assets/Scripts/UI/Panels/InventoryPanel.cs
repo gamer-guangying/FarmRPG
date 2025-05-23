@@ -10,7 +10,7 @@ public class InventoryPanel : abstractUIPanel
     [SerializeField] private Transform itemsContainer;//物品容器
     [SerializeField] private GameObject itemSlotPrefab;//物品槽预制体
     [SerializeField] private Button closeButton;//关闭按钮
-    protected override void Initialize()
+    protected override void Awake()
     {
         closeButton.onClick.AddListener(() => UIManager.Instance.ClosePanel(PanelName));
     }

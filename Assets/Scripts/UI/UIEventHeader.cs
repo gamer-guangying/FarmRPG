@@ -35,6 +35,7 @@ public class UIEventHeader : MonoBehaviour
         }
         if (Input.GetKeyDown(openMenu))
         {
+            Debug.Log("被按下");
             if (UIManager.Instance.IsPanelOpen("Menu"))//如果菜单面板已经打开，则关闭
             {
                 UIManager.Instance.ClosePanel("Menu");//关闭菜单面板
@@ -54,6 +55,7 @@ public class UIEventHeader : MonoBehaviour
             else
             {
                 UIManager.Instance.ShowPanel("Menu");//打开菜单面板
+                Debug.Log("打开");
             }
         }
     }

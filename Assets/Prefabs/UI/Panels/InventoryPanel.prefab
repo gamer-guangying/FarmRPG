@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2735891393050415673
 RectTransform:
   m_ObjectHideFlags: 0
@@ -101,10 +101,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9b2f27c1d1feb44a182b0774894097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelName: inventory
-  canvasGroup: {fileID: 0}
-  useFadeEffect: 1
-  fadeDuration: 0.3
+  panelName: Inventory
+  canvasGroup: {fileID: 8564906159007218790}
+  onPanelOpened:
+    m_PersistentCalls:
+      m_Calls: []
+  onPanelClosed:
+    m_PersistentCalls:
+      m_Calls: []
   itemsContainer: {fileID: 0}
   itemSlotPrefab: {fileID: 0}
   closeButton: {fileID: 0}
